@@ -1,14 +1,10 @@
 <?php
-/**
- * Copyright © 2016 Rouven Alexander Rieker
- * See LICENSE.md bundled with this module for license details.
- */
-namespace Semaio\AdvancedLogin\Model\Config\Source;
+namespace Baze\LoginByAttributes\Model\Config\Source;
 
 /**
  * Class LoginType
  *
- * @package Semaio\AdvancedLogin\Model\Config\Source
+ * @package Baze\LoginByAttributes\Model\Config\Source
  */
 class LoginMode
 {

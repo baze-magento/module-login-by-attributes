@@ -1,9 +1,5 @@
 <?php
-/**
- * Copyright © 2016 Rouven Alexander Rieker
- * See LICENSE.md bundled with this module for license details.
- */
-namespace Semaio\AdvancedLogin\Setup;
+namespace Baze\LoginByAttributes\Setup;
 
 use Magento\Customer\Model\Customer;
 use Magento\Customer\Setup\CustomerSetup;
@@ -14,7 +10,7 @@ use Magento\Framework\Setup\ModuleDataSetupInterface;
 /**
  * Class InstallData
  *
- * @package Semaio\AdvancedLogin\Setup
+ * @package Baze\LoginByAttributes\Setup
  */
 class InstallData implements InstallDataInterface
 {

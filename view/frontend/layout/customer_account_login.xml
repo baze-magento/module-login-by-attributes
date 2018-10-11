@@ -9,7 +9,7 @@
     <body>
         <referenceBlock name="customer_form_login">
             <action method='setTemplate'>
-                <argument name="template" xsi:type="string">Semaio_AdvancedLogin::form/login.phtml</argument>
+                <argument name="template" xsi:type="string">Baze_LoginByAttributes::form/login.phtml</argument>
             </action>
         </referenceBlock>
     </body>

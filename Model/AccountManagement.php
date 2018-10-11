@@ -1,9 +1,5 @@
 <?php
-/**
- * Copyright © 2016 Rouven Alexander Rieker
- * See LICENSE.md bundled with this module for license details.
- */
-namespace Semaio\AdvancedLogin\Model;
+namespace Baze\LoginByAttributes\Model;
 
 use Magento\Customer\Model\AccountManagement as CustomerAccountManagement;
 use Magento\Framework\Api\FilterBuilder;
@@ -12,13 +8,13 @@ use Magento\Framework\Exception\EmailNotConfirmedException;
 use Magento\Framework\Exception\InvalidEmailOrPasswordException;
 use Magento\Framework\Exception\NoSuchEntityException;
 use Magento\Customer\Model\Config\Share;
-use Semaio\AdvancedLogin\Model\ConfigProvider as AdvancedLoginConfigProvider;
-use Semaio\AdvancedLogin\Model\Config\Source\LoginMode;
+use Baze\LoginByAttributes\Model\ConfigProvider as AdvancedLoginConfigProvider;
+use Baze\LoginByAttributes\Model\Config\Source\LoginMode;
 
 /**
  * Class AccountManagement
  *
- * @package Semaio\AdvancedLogin\Model
+ * @package Baze\LoginByAttributes\Model
  */
 class AccountManagement extends CustomerAccountManagement
 {

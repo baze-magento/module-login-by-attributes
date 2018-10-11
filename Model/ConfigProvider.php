@@ -1,9 +1,5 @@
 <?php
-/**
- * Copyright © 2016 Rouven Alexander Rieker
- * See LICENSE.md bundled with this module for license details.
- */
-namespace Semaio\AdvancedLogin\Model;
+namespace Baze\LoginByAttributes\Model;
 
 use Magento\Framework\App\Config\ScopeConfigInterface;
 use Magento\Store\Model\StoreManagerInterface;
@@ -11,7 +7,7 @@ use Magento\Store\Model\StoreManagerInterface;
 /**
  * Class ConfigProvider
  *
- * @package Semaio\AdvancedLogin\Model
+ * @package Baze\LoginByAttributes\Model
  */
 class ConfigProvider
 {
