@@ -3,6 +3,7 @@ namespace Baze\LoginByAttributes\Model;
 
 use Magento\Framework\App\Config\ScopeConfigInterface;
 use Magento\Store\Model\StoreManagerInterface;
+use Magento\Store\Model\ScopeInterface;
 
 /**
  * Class ConfigProvider
@@ -45,7 +46,7 @@ class ConfigProvider
      */
     public function getLoginMode()
     {
-        return (int)$this->scopeConfig->getValue(self::XML_PATH_ADVANCEDLOGIN_LOGIN_MODE);
+        return (int)$this->scopeConfig->getValue(self::XML_PATH_ADVANCEDLOGIN_LOGIN_MODE, ScopeInterface::SCOPE_STORE);
     }
 
     /**
@@ -55,7 +56,7 @@ class ConfigProvider
      */
     public function getCustomerAccountShareScope()
     {
-        return (int)$this->scopeConfig->getValue(self::XML_PATH_CUSTOMER_ACCOUNT_SHARE_SCOPE);
+        return (int)$this->scopeConfig->getValue(self::XML_PATH_CUSTOMER_ACCOUNT_SHARE_SCOPE, ScopeInterface::SCOPE_STORE);
     }
 
     /**
@@ -65,7 +66,7 @@ class ConfigProvider
      */
     public function getLoginAttribute()
     {
-        $attribute = (string)$this->scopeConfig->getValue(self::XML_PATH_ADVANCEDLOGIN_LOGIN_ATTRIBUTE);
+        $attribute = (string)$this->scopeConfig->getValue(self::XML_PATH_ADVANCEDLOGIN_LOGIN_ATTRIBUTE, ScopeInterface::SCOPE_STORE);
         $attribute = trim($attribute);
         if ($attribute == '') {
             return false;
@@ -81,6 +82,6 @@ class ConfigProvider
      */
     public function getLoginAttributeLabel()
     {
-        return (string)$this->scopeConfig->getValue(self::XML_PATH_ADVANCEDLOGIN_LOGIN_ATTRIBUTE_LABEL);
+        return (string)$this->scopeConfig->getValue(self::XML_PATH_ADVANCEDLOGIN_LOGIN_ATTRIBUTE_LABEL, ScopeInterface::SCOPE_STORE);
     }
 }
