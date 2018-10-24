@@ -1,5 +1,5 @@
 {
-  "name": "baze-magento/module-login-by-attributes",
+  "name": "baze/module-login-by-attributes",
   "description": "Allows customers to login via a customer attribute instead of an email.",
   "require": {
     "magento/framework": "^100.0|^101.0",
